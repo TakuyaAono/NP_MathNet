@@ -5,7 +5,7 @@ Python系のサンプルを元にニューラルネットワークの学習を�
 行列計算にはMath.Netを利用しています。
 
 sin関数の学習サンプルコード
-
+`
 using MathNet.Numerics.LinearAlgebra;
 using MathNet.Numerics.LinearAlgebra.Double;
 using NP_MathNet;
@@ -68,3 +68,4 @@ for (int i = 0; i < epoch; ++i) {
             + "Error:" + (total_error / n_data).ToString());
     }
 }
+`
