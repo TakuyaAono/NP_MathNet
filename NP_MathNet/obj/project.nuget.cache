@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "58/8sA6CU962aLXuZoQVrPuuW29whkAr/GR6GjRZCRLNxap9XIPt0XWlMf/uevVoRubbo2JRusiJ1/X6Qm8aqA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\inosi\\OneDrive\\CSharp学習\\NP_MathNet\\NP_MathNet\\NP_MathNet.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\inosi\\.nuget\\packages\\mathnet.numerics\\4.15.0\\mathnet.numerics.4.15.0.nupkg.sha512"
+  ],
+  "logs": []
+}

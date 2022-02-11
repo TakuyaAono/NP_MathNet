@@ -1,0 +1,14 @@
+C:\Users\inosi\OneDrive\CSharp学習\NP_MathNet\NP_MathNet\bin\Debug\net6.0\NP_MathNet.deps.json
+C:\Users\inosi\OneDrive\CSharp学習\NP_MathNet\NP_MathNet\bin\Debug\net6.0\NP_MathNet.dll
+C:\Users\inosi\OneDrive\CSharp学習\NP_MathNet\NP_MathNet\bin\Debug\net6.0\ref\NP_MathNet.dll
+C:\Users\inosi\OneDrive\CSharp学習\NP_MathNet\NP_MathNet\bin\Debug\net6.0\NP_MathNet.pdb
+C:\Users\inosi\OneDrive\CSharp学習\NP_MathNet\NP_MathNet\bin\Debug\net6.0\NP_MathNet.xml
+C:\Users\inosi\OneDrive\CSharp学習\NP_MathNet\NP_MathNet\obj\Debug\net6.0\NP_MathNet.csproj.AssemblyReference.cache
+C:\Users\inosi\OneDrive\CSharp学習\NP_MathNet\NP_MathNet\obj\Debug\net6.0\NP_MathNet.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\inosi\OneDrive\CSharp学習\NP_MathNet\NP_MathNet\obj\Debug\net6.0\NP_MathNet.AssemblyInfoInputs.cache
+C:\Users\inosi\OneDrive\CSharp学習\NP_MathNet\NP_MathNet\obj\Debug\net6.0\NP_MathNet.AssemblyInfo.cs
+C:\Users\inosi\OneDrive\CSharp学習\NP_MathNet\NP_MathNet\obj\Debug\net6.0\NP_MathNet.csproj.CoreCompileInputs.cache
+C:\Users\inosi\OneDrive\CSharp学習\NP_MathNet\NP_MathNet\obj\Debug\net6.0\NP_MathNet.dll
+C:\Users\inosi\OneDrive\CSharp学習\NP_MathNet\NP_MathNet\obj\Debug\net6.0\ref\NP_MathNet.dll
+C:\Users\inosi\OneDrive\CSharp学習\NP_MathNet\NP_MathNet\obj\Debug\net6.0\NP_MathNet.xml
+C:\Users\inosi\OneDrive\CSharp学習\NP_MathNet\NP_MathNet\obj\Debug\net6.0\NP_MathNet.pdb

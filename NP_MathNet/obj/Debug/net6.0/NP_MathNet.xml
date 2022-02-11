@@ -1,0 +1,166 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>NP_MathNet</name>
+    </assembly>
+    <members>
+        <member name="M:NP_MathNet.NeuralNetwork.ActivationFunction.IActivationFunction.Forward(MathNet.Numerics.LinearAlgebra.Vector{System.Double})">
+            <summary>
+            順伝播
+            </summary>
+            <param name="input">入力値</param>
+            <returns>出力値</returns>
+        </member>
+        <member name="M:NP_MathNet.NeuralNetwork.ActivationFunction.IActivationFunction.Backward(MathNet.Numerics.LinearAlgebra.Vector{System.Double},MathNet.Numerics.LinearAlgebra.Vector{System.Double},MathNet.Numerics.LinearAlgebra.Vector{System.Double})">
+            <summary>
+            逆伝播
+            </summary>
+            <param name="input">上位層からの入力値</param>
+            <param name="output">順伝播時の出力値</param>
+            <param name="t">正解値</param>
+            <returns>逆伝播する値</returns>
+        </member>
+        <member name="T:NP_MathNet.NeuralNetwork.ActivationFunction.IdentityFunction">
+            <summary>
+            恒等関数
+            </summary>
+        </member>
+        <member name="M:NP_MathNet.NeuralNetwork.ActivationFunction.IdentityFunction.Forward(MathNet.Numerics.LinearAlgebra.Vector{System.Double})">
+            <summary>
+            順伝播
+            </summary>
+            <param name="input">入力値</param>
+            <returns>出力値</returns>
+        </member>
+        <member name="M:NP_MathNet.NeuralNetwork.ActivationFunction.IdentityFunction.Backward(MathNet.Numerics.LinearAlgebra.Vector{System.Double},MathNet.Numerics.LinearAlgebra.Vector{System.Double},MathNet.Numerics.LinearAlgebra.Vector{System.Double})">
+            <summary>
+            逆伝播
+            </summary>
+            <param name="input">上位層からの入力値</param>
+            <param name="output">順伝播時の出力値</param>
+            <param name="t">正解値</param>
+            <returns>逆伝播する値</returns>
+        </member>
+        <member name="T:NP_MathNet.NeuralNetwork.ActivationFunction.ReLUFunction">
+            <summary>
+            ReLU
+            </summary>
+        </member>
+        <member name="M:NP_MathNet.NeuralNetwork.ActivationFunction.ReLUFunction.Forward(MathNet.Numerics.LinearAlgebra.Vector{System.Double})">
+            <summary>
+            順伝播
+            </summary>
+            <param name="input">上位層からの入力値</param>
+            <returns>出力値</returns>
+        </member>
+        <member name="M:NP_MathNet.NeuralNetwork.ActivationFunction.ReLUFunction.Backward(MathNet.Numerics.LinearAlgebra.Vector{System.Double},MathNet.Numerics.LinearAlgebra.Vector{System.Double},MathNet.Numerics.LinearAlgebra.Vector{System.Double})">
+            <summary>
+            逆伝播
+            </summary>
+            <param name="input">上位層からの入力値</param>
+            <param name="output">順伝播時の出力値</param>
+            <param name="t">正解値</param>
+            <returns>逆伝播する値</returns>
+        </member>
+        <member name="T:NP_MathNet.NeuralNetwork.ActivationFunction.SigmoidFunction">
+            <summary>
+            シグモイド関数(ロジスティック関数)
+            </summary>
+            <see href="https://ja.wikipedia.org/wiki/%E3%82%B7%E3%82%B0%E3%83%A2%E3%82%A4%E3%83%89%E9%96%A2%E6%95%B0"/>
+        </member>
+        <member name="M:NP_MathNet.NeuralNetwork.ActivationFunction.SigmoidFunction.Forward(MathNet.Numerics.LinearAlgebra.Vector{System.Double})">
+            <summary>
+            順伝播
+            </summary>
+            <param name="input">入力値</param>
+            <returns>出力値</returns>
+        </member>
+        <member name="M:NP_MathNet.NeuralNetwork.ActivationFunction.SigmoidFunction.Backward(MathNet.Numerics.LinearAlgebra.Vector{System.Double},MathNet.Numerics.LinearAlgebra.Vector{System.Double},MathNet.Numerics.LinearAlgebra.Vector{System.Double})">
+            <summary>
+            逆伝播
+            </summary>
+            <param name="input">上位層からの入力値</param>
+            <param name="output">順伝播時の出力値</param>
+            <param name="t">正解値</param>
+            <returns>逆伝播する値</returns>
+        </member>
+        <member name="T:NP_MathNet.NeuralNetwork.ActivationFunction.SoftmaxFunction">
+            <summary>
+            ソフトマックス関数(softmax = softargmax:正規化指数関数)
+            The softmax function, also known as softargmax or normalized exponential function
+            </summary>
+            <see href="https://en.wikipedia.org/wiki/Softmax_function"/>
+        </member>
+        <member name="M:NP_MathNet.NeuralNetwork.ActivationFunction.SoftmaxFunction.Forward(MathNet.Numerics.LinearAlgebra.Vector{System.Double})">
+            <summary>
+            順伝播
+            </summary>
+            <param name="input">入力値</param>
+            <returns>出力値</returns>
+        </member>
+        <member name="M:NP_MathNet.NeuralNetwork.ActivationFunction.SoftmaxFunction.Backward(MathNet.Numerics.LinearAlgebra.Vector{System.Double},MathNet.Numerics.LinearAlgebra.Vector{System.Double},MathNet.Numerics.LinearAlgebra.Vector{System.Double})">
+            <summary>
+            逆伝播
+            </summary>
+            <param name="input">上位層からの入力値</param>
+            <param name="output">順伝播時の出力値</param>
+            <param name="t">正解値</param>
+            <returns>逆伝播する値</returns>
+        </member>
+        <member name="M:NP_MathNet.NeuralNetwork.NeuronLayer.#ctor(System.Int32,System.Int32,System.Double,NP_MathNet.NeuralNetwork.ActivationFunction.IActivationFunction)">
+            <summary>
+            回帰用出力層
+            </summary>
+            <param name="n_upper">上層のニューロ数</param>
+            <param name="n">自層のニューロン数</param>
+            <param name="wb_width">重みとバイアスの広がり具合</param>
+            <see href="http://ja.wikipedia.org/wiki/ボックス＝ミュラー法"/>
+        </member>
+        <member name="M:NP_MathNet.NeuralNetwork.NeuronLayer.Forward(MathNet.Numerics.LinearAlgebra.Vector{System.Double})">
+            <summary>
+            順伝播
+            </summary>
+            <param name="input">上位層からの入力</param>
+            <returns>下層への出力値</returns>
+        </member>
+        <member name="M:NP_MathNet.NeuralNetwork.NeuronLayer.Backward(MathNet.Numerics.LinearAlgebra.Vector{System.Double})">
+            <summary>
+            逆伝播
+            </summary>
+            <param name="delta"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NP_MathNet.NeuralNetwork.NeuronLayer.Update(System.Double)">
+            <summary>
+            重みとバイアスの更新
+            </summary>
+            <param name="eta">学習係数</param>
+        </member>
+        <member name="M:NP_MathNet.NeuralNetwork.NeuronOneInputLayer.#ctor(System.Int32)">
+            <summary>
+            回帰用出力層
+            </summary>
+            <param name="n_output">下位層のニューロン数</param>
+        </member>
+        <member name="M:NP_MathNet.NeuralNetwork.NeuronOneInputLayer.Forward(System.Double)">
+            <summary>
+            順伝播
+            </summary>
+            <param name="input">上位層からの入力</param>
+            <returns>下層への出力値</returns>
+        </member>
+        <member name="M:NP_MathNet.NeuralNetwork.NeuronOneInputLayer.Backward(MathNet.Numerics.LinearAlgebra.Vector{System.Double})">
+            <summary>
+            逆伝播
+            </summary>
+            <param name="delta"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NP_MathNet.NeuralNetwork.NeuronOneInputLayer.Update(System.Double)">
+            <summary>
+            重みとバイアスの更新
+            </summary>
+            <param name="eta">学習係数</param>
+        </member>
+    </members>
+</doc>
